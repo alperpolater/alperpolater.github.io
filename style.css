@@ -17,6 +17,20 @@ header {
     color: #ffffff;
 }
 
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
 /* Profile Container */
 .profile-container {
     display: flex;
@@ -55,6 +69,41 @@ header {
     margin-top: 0;
 }
 
+/* Contact Form */
+.contact-form {
+    padding: 40px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #282c34;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #444;
+}
+
 /* Footer Styles */
 footer {
     text-align: center;
@@ -65,7 +114,7 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .profile-container, .projects {
+    .profile-container, .projects, .contact-form {
         padding: 20px;
     }
 }
