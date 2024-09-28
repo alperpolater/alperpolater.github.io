@@ -1,105 +1,71 @@
-/* General Page Styles */
-body, html {
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; /* Set default font */
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    scroll-behavior: smooth;
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Text color */
 }
 
+/* Header Styles */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-header .logo {
-    display: inline-block;
-    font-size: 24px;
-}
-
-header nav {
-    display: inline-block;
-    float: right;
-}
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin-left: 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-header nav ul li a:hover {
-    background-color: #555;
-}
-
-.section {
-    padding: 60px 20px;
-    margin-top: 50px;
-}
-
-.section h2 {
-    margin-top: 0;
-    font-size: 32px;
     text-align: center;
-    color: #333;
-}
-
-.skills-container,
-.projects-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.skill,
-.project {
-    width: 30%;
-    margin: 10px;
-    background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #282c34;
+    color: #ffffff;
 }
 
-.progress-bar {
-    background-color: #f4f4f4;
-    border-radius: 20px;
-    margin: 5px 0;
-    overflow: hidden;
+/* Profile Container */
+.profile-container {
+    display: flex;
+    flex-direction: column; /* Vertical stacking */
+    align-items: center;
+    padding: 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
 }
 
-.progress-bar span {
-    display: block;
-    height: 20px;
-    background-color: #333;
-    color: #fff;
-    line-height: 20px;
-    text-align: right;
-    padding-right: 10px;
-    border-radius: 20px;
+/* Profile Image */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
+/* About Me Section */
+.about-me {
+    max-width: 600px; /* Limit width for readability */
     text-align: center;
-    padding: 20px 0;
+}
+
+/* Projects Section */
+.projects {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.project-item {
+    margin-bottom: 20px;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #282c34;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container, .projects {
+        padding: 20px;
+    }
 }
