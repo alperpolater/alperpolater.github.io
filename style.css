@@ -1,5 +1,6 @@
+/* Set a global font style */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -57,3 +58,5 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
