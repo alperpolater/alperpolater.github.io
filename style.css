@@ -1,118 +1,105 @@
 /* General Page Styles */
-body {
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    scroll-behavior: smooth;
 }
 
-/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
-    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-header h1 {
+header .logo {
+    display: inline-block;
+    font-size: 24px;
+}
+
+header nav {
+    display: inline-block;
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
     margin: 0;
-    font-size: 36px;
+    padding: 0;
 }
 
-header p {
-    font-size: 18px;
+header nav ul li {
+    display: inline;
+    margin-left: 15px;
 }
 
-nav {
-    margin-top: 10px;
-}
-
-nav a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    border-radius: 5px;
+    padding: 8px 12px;
+    border-radius: 4px;
     transition: background-color 0.3s;
 }
 
-nav a:hover {
+header nav ul li a:hover {
     background-color: #555;
 }
 
-/* Section Styles */
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.section {
+    padding: 60px 20px;
+    margin-top: 50px;
 }
 
-section h2 {
+.section h2 {
     margin-top: 0;
+    font-size: 32px;
+    text-align: center;
     color: #333;
 }
 
-section ul {
-    padding-left: 20px;
+.skills-container,
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-section ul li {
-    margin-bottom: 10px;
+.skill,
+.project {
+    width: 30%;
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Form Styles */
-form {
-    margin-top: 20px;
+.progress-bar {
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    margin: 5px 0;
+    overflow: hidden;
 }
 
-form label {
-    font-weight: bold;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form input[type="submit"] {
+.progress-bar span {
+    display: block;
+    height: 20px;
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    line-height: 20px;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 20px;
 }
 
-form input[type="submit"]:hover {
-    background-color: #555;
-}
-
-/* Footer Styles */
 footer {
-    text-align: center;
-    padding: 10px;
     background-color: #333;
     color: #fff;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: underline;
+    text-align: center;
+    padding: 20px 0;
 }
